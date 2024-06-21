@@ -57,6 +57,7 @@ async function displayAlbums(){
     document.querySelectorAll('.card').forEach((e)=>{
         e.addEventListener('click', item=>{
             songs= getSongs(`songs/${item.currentTarget.dataset.folder}`)
+            
         }) 
        })
 }
@@ -95,7 +96,7 @@ async function getSongs(folder) {
         </div> 
         <div class="playnow">
         <span>Play Now</span>
-        <img src="play.svg">
+        <img src="img/play.svg">
         </div>
        </li>`;
     }
@@ -107,7 +108,7 @@ async function getSongs(folder) {
         })
     })
    
-
+playMusic(songs[0])
 
 }
 let play = document.querySelector('#play')
