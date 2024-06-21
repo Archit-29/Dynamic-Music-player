@@ -130,6 +130,7 @@ const playMusic = (track,pause=false) => {
 
 async function main() {
     await getSongs('songs/hi')
+    await getSongs('songs/calming')
     playMusic(songs[0],true)
     
     await displayAlbums()
